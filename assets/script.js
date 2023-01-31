@@ -6,7 +6,7 @@ $(document).ready(function () {
   console.log("ready");
 }); 
 
-
+var savedText = $('#text');
 //Testing save buttons and targeting
 
 var saveBtnNine = $('#hour-9');
@@ -14,6 +14,7 @@ var saveBtnTen = $('#hour-10');
 var saveBtnEleven = $('#hour-11');
 
 saveBtnNine.on('click', function () {
+  localStorage.setItem("savedDay", savedText);
   console.log("this worked");
 });
 
